@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Clementine.js Full-Stack Boilerplate.</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,500" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/public/css/main.css" media="screen" title="no title" charset="utf-8">
+  </head>
+
+  <header>
+    <p>Welcome, <span id="display-name"></span>!</p>
+    <a href="/profile" class="menu">Profile</a>
+    <p>|</p>
+    <a href="/logout" class="menu">Logout</a>
+  </header>
+
+  <body>
+    <div class="container">
+      <img src="/public/img/clementine_150.png" alt="" />
+      <br />
+      <p class="clementine-text">
+        Clementine.js
+      </p>
+    </div>
+
+    <div class="container">
+      <p>
+        You have clicked the button <span id="click-nbr"></span> times.
+      </p>
+      <br />
+      <div class="btn-container">
+        <button type="submit" name="button" class="btn btn-add">Click Me!</button>
+        <button type="button" name="button" class="btn btn-delete">Reset</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="commentBox">
+        <form class="comment" action="/api/comments" method="post">
+          <input type="text" class="commentArea" name="commentArea" placeholder="Enter your comment here!">
+          <br>
+          <button type="submit" class="btn-comment" name="submitComment" value="Submit Comment">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="common/ajax-functions.js" charset="utf-8"></script>
+    <script type="text/javascript" src="controllers/clickController.client.js" charset="utf-8"></script>
+    <script type="text/javascript" src="controllers/userController.client.js">
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Clementine.js Profile Page</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,500" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/public/css/main.css" media="screen" title="no title" charset="utf-8" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="github-profile">
+        <img src="/public/img/gh-mark-32px.png" alt="github logo" />
+        <p>
+          <span>ID: </span><span id="profile-id" class="profile-value"></span>
+        </p>
+        <p>
+          <span>Username: </span><span id="profile-username" class="profile-value"></span>
+        </p>
+        <p>
+          <span>Display Name: </span><span id="display-name" class="profile-value"></span>
+        </p>
+        <p>
+          <span>Repositories: </span><span id="profile-repos" class="profile-value"></span>
+        </p>
+        <a href="/" class="menu">Home</a>
+        <p id="menu-divide">
+          |
+        </p>
+        <a href="/logout" class="menu">Logout</a>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="common/ajax-functions.js">
+    </script>
+    <script type="text/javascript" src="controllers/userController.client.js">      
+    </script>
+  </body>
+
+</html>
